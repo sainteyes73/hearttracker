@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "10562490875",
+    "firebase_url": "https://aedrenaline-c1ddf.firebaseio.com",
+    "project_id": "aedrenaline-c1ddf",
+    "storage_bucket": "aedrenaline-c1ddf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10562490875:android:b0b34ce0fb864294",
+        "android_client_info": {
+          "package_name": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10562490875-186ql2nvic4jv76atsjj1guhgumlmsc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer",
+            "certificate_hash": "fd771dc26129b7e3ca402b4f0f22cb77b281092d"
+          }
+        },
+        {
+          "client_id": "10562490875-001un7d7kitjnrj7tkeorkusda253vcj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB31Wa-eYU3kjti1HZLptcG6YLNDVppOVY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10562490875-001un7d7kitjnrj7tkeorkusda253vcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
