@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gim-useong/Desktop/Consumer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/gim-useong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b0da3dfd7be6da636bfefe58f37111da/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b357a29032fd7c88ebffbc1dc75dcbf2\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/gim-useong/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/b919af55794620f5a563b2f2a29597d8/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-27.0.2.aar\\603cb2fadeedb986a164b96948b96193\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

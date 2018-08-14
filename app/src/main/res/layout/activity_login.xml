@@ -1,33 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.LoginActivity"
+
     android:orientation="vertical">
+
     <LinearLayout
+        android:id="@+id/toplayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_weight="2">
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center">
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/icon"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/layout_email_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toplayout"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/field_email"
             android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/logo" />
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+        <EditText
+            android:id="@+id/field_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2">
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
 
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in" />
+
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up" />
     </LinearLayout>
-
-
 </LinearLayout>

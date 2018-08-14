@@ -85,7 +85,7 @@ public class ConsumerService extends SAAgent {
             Toast.makeText(getApplicationContext(), "FINDPEER_SERVICE_NOT_FOUND", Toast.LENGTH_LONG).show();
             updateTextView("Disconnected");
         } else {
-            Toast.makeText(getApplicationContext(), R.string.NoPeersFound, Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"NoPeerFound", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -107,7 +107,7 @@ public class ConsumerService extends SAAgent {
         } else if (result == SAAgent.CONNECTION_DUPLICATE_REQUEST) {
             Toast.makeText(getBaseContext(), "CONNECTION_DUPLICATE_REQUEST", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(getBaseContext(), R.string.ConnectionFailure, Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(),"connection failed", Toast.LENGTH_LONG).show();
         }
     }
 

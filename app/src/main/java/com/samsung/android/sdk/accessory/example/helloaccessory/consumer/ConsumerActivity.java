@@ -90,7 +90,7 @@ public class ConsumerActivity extends Activity {
                 if (mIsBound == true && mConsumerService != null) {
                     if (mConsumerService.closeConnection() == false) {
                         updateTextView("Disconnected");
-                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "AlreadyDisconnected", Toast.LENGTH_LONG).show();
                         mMessageAdapter.clear();
                     }
                 }
@@ -100,7 +100,7 @@ public class ConsumerActivity extends Activity {
                 if (mIsBound == true && mConsumerService != null) {
                     if (mConsumerService.sendData("Hello Accessory!")) {
                     } else {
-                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"AlreadyDisconnected" , Toast.LENGTH_LONG).show();
                     }
                 }
                 break;
