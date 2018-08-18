@@ -53,8 +53,7 @@ public class ConsumerActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mTextView = (TextView) findViewById(R.id.tvStatus);
-        mMessageListView = (ListView) findViewById(R.id.lvMessage);
+
         mMessageAdapter = new MessageAdapter();
         mMessageListView.setAdapter(mMessageAdapter);
         // Bind service
@@ -77,7 +76,7 @@ public class ConsumerActivity extends Activity {
         }
         super.onDestroy();
     }
-
+/*
     public void mOnClick(View v) {
         switch (v.getId()) {
             case R.id.buttonConnect: {
@@ -108,7 +107,7 @@ public class ConsumerActivity extends Activity {
             default:
         }
     }
-
+*/
     private final ServiceConnection mConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {

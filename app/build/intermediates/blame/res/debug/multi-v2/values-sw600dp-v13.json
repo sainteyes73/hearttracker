@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "/Users/gim-useong/Desktop/hearttracker/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b357a29032fd7c88ebffbc1dc75dcbf2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/Users/gim-useong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/d477b3125dcfbd1f708ab0487823cf6f/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\0fbc51ec541a2fad2fe449dbda3b0544\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/Users/gim-useong/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/d983ada0014db9a3f4dcc00de52592c5/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

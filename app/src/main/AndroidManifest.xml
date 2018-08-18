@@ -19,9 +19,11 @@
         android:allowBackup="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:icon="@mipmap/ic_launcher"
+        android:background="#F2F9FA"
         android:label="@string/app_name">
         <activity
-            android:name=".ConsumerActivity">
+            android:name=".ConsumerActivity"
+            android:theme="@style/AppTheme">
 
         </activity>
 

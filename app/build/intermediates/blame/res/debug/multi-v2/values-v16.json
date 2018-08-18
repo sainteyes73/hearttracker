@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "/Users/gim-useong/Desktop/hearttracker/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\5f3938e73a937f5f66df7c342643e5b7\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/gim-useong/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e288e56ad930eeb1301e3777224d4efa/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b357a29032fd7c88ebffbc1dc75dcbf2\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/gim-useong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/d477b3125dcfbd1f708ab0487823cf6f/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,13 +1,18 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorWhite</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Widget.MyApp.Toolbar.Solid" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:elevation" tools:ignore="NewApi">4dp</item>
+        <item name="titleTextAppearance">...</item>
     </style>
 
 </resources>

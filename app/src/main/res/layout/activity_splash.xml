@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F2F9FA"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +19,7 @@
 
         <ImageView
             android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_height="168dp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/logo" />
     </LinearLayout>
@@ -25,7 +27,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2">
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/heartrate" />
+
 
     </LinearLayout>
 
