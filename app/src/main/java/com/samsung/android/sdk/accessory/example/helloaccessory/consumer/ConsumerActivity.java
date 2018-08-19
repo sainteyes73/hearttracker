@@ -38,6 +38,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,7 +49,7 @@ public class ConsumerActivity extends Activity {
     private boolean mIsBound = false;
     private ListView mMessageListView;
     private ConsumerService mConsumerService = null;
-
+    private Button checkheart, register;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +60,11 @@ public class ConsumerActivity extends Activity {
         // Bind service
         mIsBound = bindService(new Intent(ConsumerActivity.this, ConsumerService.class), mConnection, Context.BIND_AUTO_CREATE);
     }
+    protected void initButton(){
+        checkheart= findViewById(R.id.checkheart);
+        register=findViewById(R.id.register);
 
+    }
     @Override
     protected void onDestroy() {
         // Clean up connections

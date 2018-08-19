@@ -1177,6 +1177,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar_title
 id top
 id topPanel
 id toplayout
@@ -1274,6 +1275,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout toolbar
 mipmap ic_launcher
 string abc_action_bar_home_description
 string abc_action_bar_up_description

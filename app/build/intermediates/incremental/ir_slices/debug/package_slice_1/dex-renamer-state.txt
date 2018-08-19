@@ -1,4 +1,0 @@
-#Fri Aug 17 13:55:03 KST 2018
-base.0=/Users/gim-useong/Desktop/hearttracker/app/build/intermediates/transforms/dexMerger/debug/17
-path.0=classes.dex
-renamed.0=classes.dex

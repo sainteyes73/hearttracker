@@ -9,10 +9,5 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Widget.MyApp.Toolbar.Solid" parent="Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/colorWhite</item>
-        <item name="android:elevation" tools:ignore="NewApi">4dp</item>
-        <item name="titleTextAppearance">...</item>
-    </style>
 
 </resources>

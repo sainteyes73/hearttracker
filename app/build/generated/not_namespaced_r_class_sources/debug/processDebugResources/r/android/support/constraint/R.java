@@ -890,15 +890,15 @@ public final class R {
         public static final int titleDividerNoCustom = 0x7f0800d3;
         public static final int title_template = 0x7f0800d4;
         public static final int toggle = 0x7f0800d5;
-        public static final int top = 0x7f0800d6;
-        public static final int topPanel = 0x7f0800d7;
-        public static final int transitionToEnd = 0x7f0800da;
-        public static final int transitionToStart = 0x7f0800db;
-        public static final int triangle = 0x7f0800e1;
-        public static final int uniform = 0x7f0800e3;
-        public static final int up = 0x7f0800e4;
-        public static final int wrap = 0x7f0800ea;
-        public static final int wrap_content = 0x7f0800eb;
+        public static final int top = 0x7f0800d7;
+        public static final int topPanel = 0x7f0800d8;
+        public static final int transitionToEnd = 0x7f0800db;
+        public static final int transitionToStart = 0x7f0800dc;
+        public static final int triangle = 0x7f0800e2;
+        public static final int uniform = 0x7f0800e4;
+        public static final int up = 0x7f0800e5;
+        public static final int wrap = 0x7f0800eb;
+        public static final int wrap_content = 0x7f0800ec;
     }
     public static final class integer {
         private integer() {}
