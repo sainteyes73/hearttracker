@@ -157,6 +157,20 @@ attr counterEnabled
 attr counterMaxLength
 attr counterOverflowTextAppearance
 attr counterTextAppearance
+attr cpb_colorIndicator
+attr cpb_colorIndicatorBackground
+attr cpb_colorProgress
+attr cpb_cornerRadius
+attr cpb_iconComplete
+attr cpb_iconError
+attr cpb_paddingProgress
+attr cpb_selectorComplete
+attr cpb_selectorError
+attr cpb_selectorIdle
+attr cpb_textComplete
+attr cpb_textError
+attr cpb_textIdle
+attr cpb_textProgress
 attr crossfade
 attr currentState
 attr curveFit
@@ -574,6 +588,17 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color cpb_blue
+color cpb_blue_dark
+color cpb_complete_state_selector
+color cpb_error_state_selector
+color cpb_green
+color cpb_green_dark
+color cpb_grey
+color cpb_idle_state_selector
+color cpb_red
+color cpb_red_dark
+color cpb_white
 color design_bottom_navigation_shadow_color
 color design_error
 color design_fab_shadow_end_color
@@ -714,6 +739,7 @@ dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
 dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
+dimen cpb_stroke_width
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
 dimen design_bottom_navigation_active_text_size
@@ -900,6 +926,9 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable complete_state_selector
+drawable cpb_background
+drawable custom_button_round_rect2_border
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1005,6 +1034,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnWithText
 id buttonPanel
 id button_sign_in
 id button_sign_up
@@ -1014,6 +1044,7 @@ id center_horizontal
 id center_vertical
 id chains
 id checkbox
+id checkheart
 id chronometer
 id clip_horizontal
 id clip_vertical
@@ -1111,8 +1142,10 @@ id pin
 id position
 id progress_circular
 id progress_horizontal
+id progressbutton
 id radio
 id rectangles
+id register
 id reverseSawtooth
 id right
 id right_icon
@@ -1238,9 +1271,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_heart_check
 layout activity_login
 layout activity_main
 layout activity_splash
+layout circularprogressbutton
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1277,6 +1312,14 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout toolbar
 mipmap ic_launcher
+string Complete
+string CustomSelectorSample
+string Error
+string IndeterminateProgressSample
+string IntegerProgressSample
+string ProgressPaddingSample
+string StateChangeSample
+string Upload
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1331,6 +1374,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
+string define_circularprogressbutton
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -1342,6 +1386,15 @@ string heading_my_top_posts
 string heading_recent
 string hint_email
 string hint_password
+string library_circularprogressbutton_author
+string library_circularprogressbutton_authorWebsite
+string library_circularprogressbutton_isOpenSource
+string library_circularprogressbutton_libraryDescription
+string library_circularprogressbutton_libraryName
+string library_circularprogressbutton_libraryVersion
+string library_circularprogressbutton_libraryWebsite
+string library_circularprogressbutton_licenseId
+string library_circularprogressbutton_repositoryLink
 string loading
 string location_permission_denied
 string lorem
@@ -1763,6 +1816,7 @@ styleable BottomNavigationView elevation itemBackground itemIconTint itemTextCol
 styleable BottomSheetBehavior_Layout behavior_hideable behavior_peekHeight behavior_skipCollapsed
 styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
+styleable CircularProgressButton cpb_colorIndicator cpb_colorIndicatorBackground cpb_colorProgress cpb_cornerRadius cpb_iconComplete cpb_iconError cpb_paddingProgress cpb_selectorComplete cpb_selectorError cpb_selectorIdle cpb_textComplete cpb_textError cpb_textIdle cpb_textProgress
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

@@ -34,6 +34,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +44,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ConsumerActivity extends Activity {
+public class ConsumerActivity extends BaseActivity {
     private static TextView mTextView;
     private static MessageAdapter mMessageAdapter;
     private boolean mIsBound = false;
@@ -55,15 +56,17 @@ public class ConsumerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        initButton();
         mMessageAdapter = new MessageAdapter();
         mMessageListView.setAdapter(mMessageAdapter);
         // Bind service
         mIsBound = bindService(new Intent(ConsumerActivity.this, ConsumerService.class), mConnection, Context.BIND_AUTO_CREATE);
     }
     protected void initButton(){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         checkheart= findViewById(R.id.checkheart);
         register=findViewById(R.id.register);
-
     }
     @Override
     protected void onDestroy() {
@@ -81,16 +84,17 @@ public class ConsumerActivity extends Activity {
         }
         super.onDestroy();
     }
-/*
+
     public void mOnClick(View v) {
         switch (v.getId()) {
-            case R.id.buttonConnect: {
+            case R.id.progressbutton: {
                 if (mIsBound == true && mConsumerService != null) {
                     mConsumerService.findPeers();
                 }
                 break;
             }
-            case R.id.buttonDisconnect: {
+            case R.id.checkheart: {
+                /*
                 if (mIsBound == true && mConsumerService != null) {
                     if (mConsumerService.closeConnection() == false) {
                         updateTextView("Disconnected");
@@ -99,8 +103,10 @@ public class ConsumerActivity extends Activity {
                     }
                 }
                 break;
+                */
+                startActivity(new Intent(ConsumerActivity.this, HeartCheck.class));
             }
-            case R.id.buttonSend: {
+            case R.id.register: {
                 if (mIsBound == true && mConsumerService != null) {
                     if (mConsumerService.sendData("Hello Accessory!")) {
                     } else {
@@ -112,7 +118,7 @@ public class ConsumerActivity extends Activity {
             default:
         }
     }
-*/
+
     private final ServiceConnection mConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {

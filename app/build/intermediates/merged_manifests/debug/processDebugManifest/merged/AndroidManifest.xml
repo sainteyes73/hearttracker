@@ -35,11 +35,11 @@
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity
             android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.ConsumerActivity"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
 
         <service android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.ConsumerService" />
 
@@ -73,6 +73,7 @@
             >
         </activity>
         <activity android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.LoginActivity" />
+        <activity android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.HeartCheck" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
