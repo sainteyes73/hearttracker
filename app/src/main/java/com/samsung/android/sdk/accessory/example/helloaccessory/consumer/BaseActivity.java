@@ -13,6 +13,7 @@ public class BaseActivity extends AppCompatActivity {
             mProgressDialog = new ProgressDialog(this);
             mProgressDialog.setMessage("진행중..");
             mProgressDialog.setIndeterminate(true);
+
         }
 
         mProgressDialog.show();

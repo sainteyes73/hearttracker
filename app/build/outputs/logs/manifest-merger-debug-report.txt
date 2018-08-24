@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-62:12
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-63:12
 MERGED from [com.afollestad:sectioned-recyclerview:0.5.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\sectioned-recyclerview-0.5.0.aar\a2a1baf7a457fc5c260881beae6c7d84\AndroidManifest.xml:2:1-14:12
 MERGED from [com.firebaseui:firebase-ui-database:3.3.1] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-3.3.1.aar\2f212212fef191212847e4908b1308cf\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:design:27.1.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\0fbc51ec541a2fad2fe449dbda3b0544\AndroidManifest.xml:17:1-22:12
@@ -11,7 +11,6 @@ MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha2] C:\U
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\27ba085cb68d2ccb78f5eee2801d820d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\603cb2fadeedb986a164b96948b96193\AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton:butterknife:8.6.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\butterknife-8.6.0.aar\36b04b9a5939807b823da1cae0f3d2bd\AndroidManifest.xml:2:1-7:12
-MERGED from [com.github.dmytrodanylyk.circular-progress-button:library:1.1.3] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\library-1.1.3.aar\8bfdaecb64d39d6a3c51d18bcae9ab90\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b357a29032fd7c88ebffbc1dc75dcbf2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-core:16.0.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.0.aar\6aaf7418d03354bb3711d0ade527e819\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:16.0.1] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.1.aar\0c12558c9adbdf6b2a8aba38840eb6d7\AndroidManifest.xml:17:1-38:12
@@ -47,9 +46,9 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\saint\.gradle\caches
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\e560db29ebf8a12c917be03bf54510b1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a2524906b1b7f7d380bc9afbb05504d2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.4.aar\c000250fbbdde27a2f81f89a1d0de346\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:2:1-63:12
 	package
 		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:3:5-80
 		INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml
@@ -101,13 +100,11 @@ ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:
 	android:name
 		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:15:22-77
 application
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:17:5-60:19
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:17:5-61:19
 MERGED from [com.afollestad:sectioned-recyclerview:0.5.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\sectioned-recyclerview-0.5.0.aar\a2a1baf7a457fc5c260881beae6c7d84\AndroidManifest.xml:12:5-20
 MERGED from [com.afollestad:sectioned-recyclerview:0.5.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\sectioned-recyclerview-0.5.0.aar\a2a1baf7a457fc5c260881beae6c7d84\AndroidManifest.xml:12:5-20
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha2] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.0-alpha2.aar\480883b6d6280b7e4e7ba0928045f640\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha2] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\constraint-layout-2.0.0-alpha2.aar\480883b6d6280b7e4e7ba0928045f640\AndroidManifest.xml:9:5-20
-MERGED from [com.github.dmytrodanylyk.circular-progress-button:library:1.1.3] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\library-1.1.3.aar\8bfdaecb64d39d6a3c51d18bcae9ab90\AndroidManifest.xml:12:5-20
-MERGED from [com.github.dmytrodanylyk.circular-progress-button:library:1.1.3] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\library-1.1.3.aar\8bfdaecb64d39d6a3c51d18bcae9ab90\AndroidManifest.xml:12:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.0.aar\6aaf7418d03354bb3711d0ade527e819\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.0.aar\6aaf7418d03354bb3711d0ade527e819\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:16.0.1] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.1.aar\0c12558c9adbdf6b2a8aba38840eb6d7\AndroidManifest.xml:22:5-36:19
@@ -140,6 +137,8 @@ MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\sain
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\8fde9fdca57e0763a1de53e29268ac42\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.4.aar\c000250fbbdde27a2f81f89a1d0de346\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.4.aar\c000250fbbdde27a2f81f89a1d0de346\AndroidManifest.xml:22:5-20
+	android:supportsRtl
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
 		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:21:9-41
 	android:background
@@ -149,75 +148,75 @@ MERGED from [com.google.android.gms:play-services-measurement-base:15.0.4] C:\Us
 	android:allowBackup
 		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:22:9-59
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:23:9-40
 activity#com.samsung.android.sdk.accessory.example.helloaccessory.consumer.ConsumerActivity
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:23:9-25:47
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:24:9-26:47
 	android:theme
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:25:13-44
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:26:13-44
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:24:13-45
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:25:13-45
 service#com.samsung.android.sdk.accessory.example.helloaccessory.consumer.ConsumerService
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:27:9-52
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:28:9-52
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:27:18-49
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:28:18-49
 receiver#com.samsung.android.sdk.accessory.RegisterUponInstallReceiver
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:29:9-33:20
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:30:9-34:20
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:29:19-95
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:30:19-95
 intent-filter#action:name:com.samsung.accessory.action.REGISTER_AGENT
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:30:13-32:29
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:31:13-33:29
 action#com.samsung.accessory.action.REGISTER_AGENT
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:31:17-86
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:32:17-86
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:31:25-83
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:32:25-83
 receiver#com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:34:9-38:20
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:35:9-39:20
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:34:19-112
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:35:19-112
 intent-filter#action:name:com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:35:13-37:29
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:36:13-38:29
 action#com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:36:17-100
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:37:17-100
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:36:25-97
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:37:25-97
 meta-data#AccessoryServicesLocation
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:40:9-42:62
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:41:9-43:62
 	android:value
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:42:13-59
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:43:13-59
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:41:13-53
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:42:13-53
 meta-data#GearAppType
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:43:9-45:35
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:44:9-46:35
 	android:value
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:45:13-32
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:46:13-32
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:44:13-39
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:45:13-39
 activity#com.samsung.android.sdk.accessory.example.helloaccessory.consumer.SplashActivity
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:47:9-57:20
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:48:9-58:20
 	android:screenOrientation
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:51:13-49
 	android:label
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:49:13-45
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:50:13-45
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:48:13-43
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:49:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:51:13-55:29
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:52:13-56:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:52:17-69
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:53:17-69
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:52:25-66
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:53:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:54:17-77
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:55:17-77
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:54:27-74
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:55:27-74
 activity#com.samsung.android.sdk.accessory.example.helloaccessory.consumer.LoginActivity
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:58:9-51
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:59:9-51
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:58:19-48
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:59:19-48
 activity#com.samsung.android.sdk.accessory.example.helloaccessory.consumer.HeartCheck
-ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:59:9-57
+ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:60:9-57
 	android:name
-		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:59:19-45
+		ADDED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml:60:19-45
 uses-sdk
 INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\saint\Desktop\hearttracker\app\src\main\AndroidManifest.xml
@@ -236,8 +235,6 @@ MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\saint\.gradle\cach
 MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\603cb2fadeedb986a164b96948b96193\AndroidManifest.xml:20:5-44
 MERGED from [com.jakewharton:butterknife:8.6.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\butterknife-8.6.0.aar\36b04b9a5939807b823da1cae0f3d2bd\AndroidManifest.xml:5:5-43
 MERGED from [com.jakewharton:butterknife:8.6.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\butterknife-8.6.0.aar\36b04b9a5939807b823da1cae0f3d2bd\AndroidManifest.xml:5:5-43
-MERGED from [com.github.dmytrodanylyk.circular-progress-button:library:1.1.3] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\library-1.1.3.aar\8bfdaecb64d39d6a3c51d18bcae9ab90\AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.dmytrodanylyk.circular-progress-button:library:1.1.3] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\library-1.1.3.aar\8bfdaecb64d39d6a3c51d18bcae9ab90\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b357a29032fd7c88ebffbc1dc75dcbf2\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b357a29032fd7c88ebffbc1dc75dcbf2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.0] C:\Users\saint\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.0.aar\6aaf7418d03354bb3711d0ade527e819\AndroidManifest.xml:5:5-44

@@ -80,10 +80,10 @@ public class ConsumerService extends SAAgent {
                 requestServiceConnection(peerAgent);
         } else if (result == SAAgent.FINDPEER_DEVICE_NOT_CONNECTED) {
             Toast.makeText(getApplicationContext(), "FINDPEER_DEVICE_NOT_CONNECTED", Toast.LENGTH_LONG).show();
-            updateTextView("Disconnected");
+      //      updateTextView("Disconnected");
         } else if (result == SAAgent.FINDPEER_SERVICE_NOT_FOUND) {
             Toast.makeText(getApplicationContext(), "FINDPEER_SERVICE_NOT_FOUND", Toast.LENGTH_LONG).show();
-            updateTextView("Disconnected");
+        //    updateTextView("Disconnected");
         } else {
             Toast.makeText(getApplicationContext(),"NoPeerFound", Toast.LENGTH_LONG).show();
         }
@@ -100,9 +100,9 @@ public class ConsumerService extends SAAgent {
     protected void onServiceConnectionResponse(SAPeerAgent peerAgent, SASocket socket, int result) {
         if (result == SAAgent.CONNECTION_SUCCESS) {
             this.mConnectionHandler = (ServiceConnection) socket;
-            updateTextView("Connected");
+        //    updateTextView("Connected");
         } else if (result == SAAgent.CONNECTION_ALREADY_EXIST) {
-            updateTextView("Connected");
+        //    updateTextView("Connected");
             Toast.makeText(getBaseContext(), "CONNECTION_ALREADY_EXIST", Toast.LENGTH_LONG).show();
         } else if (result == SAAgent.CONNECTION_DUPLICATE_REQUEST) {
             Toast.makeText(getBaseContext(), "CONNECTION_DUPLICATE_REQUEST", Toast.LENGTH_LONG).show();
@@ -151,7 +151,7 @@ public class ConsumerService extends SAAgent {
 
         @Override
         protected void onServiceConnectionLost(int reason) {
-            updateTextView("Disconnected");
+     //       updateTextView("Disconnected");
             closeConnection();
         }
     }
@@ -163,7 +163,11 @@ public class ConsumerService extends SAAgent {
     }
 
     public void findPeers() {
-        findPeerAgents();
+        try{
+            findPeerAgents();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public boolean sendData(final String data) {
@@ -211,7 +215,7 @@ public class ConsumerService extends SAAgent {
         }
         return true;
     }
-
+/*
     private void updateTextView(final String str) {
         mHandler.post(new Runnable() {
             @Override
@@ -220,7 +224,7 @@ public class ConsumerService extends SAAgent {
             }
         });
     }
-
+*/
     private void addMessage(final String prefix, final String data) {
         final String strToUI = prefix.concat(data);
         mHandler.post(new Runnable() {

@@ -34,6 +34,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,30 +45,32 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dd.CircularProgressButton;
+
 public class ConsumerActivity extends BaseActivity {
-    private static TextView mTextView;
     private static MessageAdapter mMessageAdapter;
     private boolean mIsBound = false;
-    private ListView mMessageListView;
+    //private ListView mMessageListView;
     private ConsumerService mConsumerService = null;
     private Button checkheart, register;
+    private CircularProgressButton circularbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         initButton();
         mMessageAdapter = new MessageAdapter();
-        mMessageListView.setAdapter(mMessageAdapter);
+      //  mMessageListView.setAdapter(mMessageAdapter);
         // Bind service
         mIsBound = bindService(new Intent(ConsumerActivity.this, ConsumerService.class), mConnection, Context.BIND_AUTO_CREATE);
     }
     protected void initButton(){
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+      //  circularbutton=findViewById(R.id.progressbutton);
         checkheart= findViewById(R.id.checkheart);
         register=findViewById(R.id.register);
     }
+    /*
     @Override
     protected void onDestroy() {
         // Clean up connections
@@ -84,12 +87,13 @@ public class ConsumerActivity extends BaseActivity {
         }
         super.onDestroy();
     }
-
+*/
     public void mOnClick(View v) {
         switch (v.getId()) {
             case R.id.progressbutton: {
                 if (mIsBound == true && mConsumerService != null) {
                     mConsumerService.findPeers();
+                    circularbutton.setProgress(50);
                 }
                 break;
             }
@@ -123,25 +127,27 @@ public class ConsumerActivity extends BaseActivity {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
             mConsumerService = ((ConsumerService.LocalBinder) service).getService();
-            updateTextView("onServiceConnected");
+          //  updateTextView("onServiceConnected");
+            Toast.makeText(mConsumerService, "Connect Complete", Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onServiceDisconnected(ComponentName className) {
             mConsumerService = null;
             mIsBound = false;
-            updateTextView("onServiceDisconnected");
+       //     updateTextView("onServiceDisconnected");
+            Toast.makeText(mConsumerService, "DisConnect Complete", Toast.LENGTH_SHORT).show();
         }
     };
 
     public static void addMessage(String data) {
         mMessageAdapter.addMessage(new Message(data));
     }
-
+/*
     public static void updateTextView(final String str) {
         mTextView.setText(str);
     }
-
+*/
     private class MessageAdapter extends BaseAdapter {
         private static final int MAX_MESSAGES_TO_DISPLAY = 20;
         private List<Message> mMessages;
@@ -161,7 +167,7 @@ public class ConsumerActivity extends BaseActivity {
                         mMessages.add(msg);
                     }
                     notifyDataSetChanged();
-                    mMessageListView.setSelection(getCount() - 1);
+                 //   mMessageListView.setSelection(getCount() - 1);
                 }
             });
         }
