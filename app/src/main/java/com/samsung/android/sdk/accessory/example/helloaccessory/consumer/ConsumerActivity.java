@@ -35,6 +35,7 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
 
+import android.support.annotation.NonNull;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,39 +46,68 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dd.CircularProgressButton;
+import com.dd.morphingbutton.MorphingButton;
+import com.dd.morphingbutton.impl.LinearProgressButton;
+import com.samsung.android.sdk.accessory.example.helloaccessory.consumer.util.ProgressGenerator;
+
 
 public class ConsumerActivity extends BaseActivity {
-    private static MessageAdapter mMessageAdapter;
     private boolean mIsBound = false;
     //private ListView mMessageListView;
     private ConsumerService mConsumerService = null;
     private Button checkheart, register;
-    private CircularProgressButton circularbutton;
+    private LinearProgressButton btnMorph1;
+    private int mMorphCounter1 = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initButton();
-        mMessageAdapter = new MessageAdapter();
-      //  mMessageListView.setAdapter(mMessageAdapter);
-        // Bind service
         mIsBound = bindService(new Intent(ConsumerActivity.this, ConsumerService.class), mConnection, Context.BIND_AUTO_CREATE);
+        btnMorph1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onMorphButton1Clicked(btnMorph1);
+            }
+        });
+
+        morphToSquare(btnMorph1, 0);
     }
     protected void initButton(){
       //  circularbutton=findViewById(R.id.progressbutton);
+        btnMorph1=(LinearProgressButton)findViewById(R.id.btnMorph1);
         checkheart= findViewById(R.id.checkheart);
         register=findViewById(R.id.register);
     }
-    /*
+    private void onMorphButton1Clicked(final LinearProgressButton btnMorph) {
+        if (mMorphCounter1 == 0) {
+            if (mIsBound == true && mConsumerService != null) {
+                mConsumerService.findPeers();
+                Toast.makeText(getApplicationContext(), "연결완료", Toast.LENGTH_LONG).show();
+                mMorphCounter1++;
+                morphToSquare(btnMorph, integer(R.integer.mb_animation));
+            }
+
+           // morphToSquare(btnMorph, integer(R.integer.mb_animation));
+        } else if (mMorphCounter1 == 1) {
+            if (mIsBound == true && mConsumerService != null) {
+                if (mConsumerService.closeConnection() == false) {
+                    Toast.makeText(getApplicationContext(), "연결해제", Toast.LENGTH_LONG).show();
+                    mMorphCounter1 = 0;
+                    simulateProgress1(btnMorph);
+                }
+            }
+
+
+        }
+    }
+/*
     @Override
     protected void onDestroy() {
         // Clean up connections
         if (mIsBound == true && mConsumerService != null) {
             if (mConsumerService.closeConnection() == false) {
-                updateTextView("Disconnected");
-                mMessageAdapter.clear();
+
             }
         }
         // Un-bind service
@@ -90,13 +120,6 @@ public class ConsumerActivity extends BaseActivity {
 */
     public void mOnClick(View v) {
         switch (v.getId()) {
-            case R.id.progressbutton: {
-                if (mIsBound == true && mConsumerService != null) {
-                    mConsumerService.findPeers();
-                    circularbutton.setProgress(50);
-                }
-                break;
-            }
             case R.id.checkheart: {
                 /*
                 if (mIsBound == true && mConsumerService != null) {
@@ -140,14 +163,65 @@ public class ConsumerActivity extends BaseActivity {
         }
     };
 
-    public static void addMessage(String data) {
-        mMessageAdapter.addMessage(new Message(data));
+
+    private void morphToSquare(final MorphingButton btnMorph, int duration) {
+        MorphingButton.Params square = MorphingButton.Params.create()
+                .duration(duration)
+                .cornerRadius(dimen(R.dimen.mb_corner_radius_2))
+                .width(dimen(R.dimen.mb_width_120))
+                .height(dimen(R.dimen.mb_height_56))
+                .color(color(R.color.mb_blue))
+                .colorPressed(color(R.color.mb_blue_dark))
+                .text(getString(R.string.mb_ready));
+        btnMorph.morph(square);
     }
-/*
-    public static void updateTextView(final String str) {
-        mTextView.setText(str);
+
+    private void morphToSuccess(final MorphingButton btnMorph) {
+        MorphingButton.Params circle = MorphingButton.Params.create()
+                .duration(integer(R.integer.mb_animation))
+                .cornerRadius(dimen(R.dimen.mb_height_56))
+                .width(dimen(R.dimen.mb_height_56))
+                .height(dimen(R.dimen.mb_height_56))
+                .color(color(R.color.mb_green))
+                .colorPressed(color(R.color.mb_green_dark))
+                .icon(R.drawable.ic_done);
+        btnMorph.morph(circle);
     }
-*/
+
+    private void morphToFailure(final MorphingButton btnMorph, int duration) {
+        MorphingButton.Params circle = MorphingButton.Params.create()
+                .duration(duration)
+                .cornerRadius(dimen(R.dimen.mb_height_56))
+                .width(dimen(R.dimen.mb_height_56))
+                .height(dimen(R.dimen.mb_height_56))
+                .color(color(R.color.mb_red))
+                .colorPressed(color(R.color.mb_red_dark))
+                .icon(R.drawable.ic_lock);
+        btnMorph.morph(circle);
+    }
+
+    private void simulateProgress1(@NonNull final LinearProgressButton button) {
+        int progressColor = color(R.color.mb_purple);
+        int color = color(R.color.mb_gray);
+        int progressCornerRadius = dimen(R.dimen.mb_corner_radius_4);
+        int width = dimen(R.dimen.mb_width_200);
+        int height = dimen(R.dimen.mb_height_30);
+        int duration = integer(R.integer.mb_animation);
+
+        ProgressGenerator generator = new ProgressGenerator(new ProgressGenerator.OnCompleteListener() {
+            @Override
+            public void onComplete() {
+                morphToSuccess(button);
+                button.unblockTouch();
+            }
+        });
+        button.blockTouch(); // prevent user from clicking while button is in progress
+        button.morphToProgress(color, progressColor, progressCornerRadius, width, height, duration);
+        generator.start(button);
+    }
+
+    }
+    /*
     private class MessageAdapter extends BaseAdapter {
         private static final int MAX_MESSAGES_TO_DISPLAY = 20;
         private List<Message> mMessages;
@@ -219,4 +293,6 @@ public class ConsumerActivity extends BaseActivity {
             this.data = data;
         }
     }
+
 }
+*/

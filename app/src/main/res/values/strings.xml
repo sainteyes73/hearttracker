@@ -18,6 +18,9 @@
     <string name="permission_required_toast">Location permission is required for this demo.</string>
     <string name="textview_message" formatted="false">%1$1s\n</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="mb_ok">연결완료</string>
+    <string name="mb_failure">연결실패</string>
+    <string name="mb_ready">기기연결</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="add_task_button">추가</string>
     <string name="action_settings">Settings</string>

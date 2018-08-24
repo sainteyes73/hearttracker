@@ -157,20 +157,6 @@ attr counterEnabled
 attr counterMaxLength
 attr counterOverflowTextAppearance
 attr counterTextAppearance
-attr cpb_colorIndicator
-attr cpb_colorIndicatorBackground
-attr cpb_colorProgress
-attr cpb_cornerRadius
-attr cpb_iconComplete
-attr cpb_iconError
-attr cpb_paddingProgress
-attr cpb_selectorComplete
-attr cpb_selectorError
-attr cpb_selectorIdle
-attr cpb_textComplete
-attr cpb_textError
-attr cpb_textIdle
-attr cpb_textProgress
 attr crossfade
 attr currentState
 attr curveFit
@@ -560,6 +546,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color backgroundcolor
 color bordercolor
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -590,12 +577,9 @@ color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
 color cpb_blue
 color cpb_blue_dark
-color cpb_complete_state_selector
-color cpb_error_state_selector
 color cpb_green
 color cpb_green_dark
 color cpb_grey
-color cpb_idle_state_selector
 color cpb_red
 color cpb_red_dark
 color cpb_white
@@ -619,6 +603,10 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color holo_blue_bright
+color holo_green_light
+color holo_orange_light
+color holo_red_light
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -631,6 +619,16 @@ color material_grey_600
 color material_grey_800
 color material_grey_850
 color material_grey_900
+color mb_blue
+color mb_blue_dark
+color mb_gray
+color mb_green
+color mb_green_dark
+color mb_purple
+color mb_purple_dark
+color mb_red
+color mb_red_dark
+color mb_white
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
@@ -739,7 +737,6 @@ dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
 dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
-dimen cpb_stroke_width
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
 dimen design_bottom_navigation_active_text_size
@@ -793,6 +790,14 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen mb_corner_radius_2
+dimen mb_corner_radius_4
+dimen mb_height_30
+dimen mb_height_4
+dimen mb_height_56
+dimen mb_width_120
+dimen mb_width_200
+dimen mb_width_70
 dimen notification_action_icon_size
 dimen notification_action_text_size
 dimen notification_big_circle_margin
@@ -906,6 +911,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable border
+drawable bt_corner
 drawable careregister
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -927,7 +933,6 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable complete_state_selector
-drawable cpb_background
 drawable custom_button_round_rect2_border
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -946,6 +951,8 @@ drawable heart
 drawable heartrate
 drawable heartrate1
 drawable heartrate2
+drawable ic_done
+drawable ic_lock
 drawable id
 drawable idle_state_selector
 drawable login
@@ -1035,6 +1042,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnMorph1
 id buttonPanel
 id button_sign_in
 id button_sign_up
@@ -1142,7 +1150,6 @@ id pin
 id position
 id progress_circular
 id progress_horizontal
-id progressbutton
 id radio
 id rectangles
 id register
@@ -1243,6 +1250,8 @@ integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer google_play_services_version
 integer hide_password_duration
+integer mb_animation
+integer mb_height_56
 integer show_password_duration
 integer status_bar_notification_info_maxnum
 layout abc_action_bar_title_item
@@ -1373,7 +1382,6 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
-string define_circularprogressbutton
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -1385,18 +1393,12 @@ string heading_my_top_posts
 string heading_recent
 string hint_email
 string hint_password
-string library_circularprogressbutton_author
-string library_circularprogressbutton_authorWebsite
-string library_circularprogressbutton_isOpenSource
-string library_circularprogressbutton_libraryDescription
-string library_circularprogressbutton_libraryName
-string library_circularprogressbutton_libraryVersion
-string library_circularprogressbutton_libraryWebsite
-string library_circularprogressbutton_licenseId
-string library_circularprogressbutton_repositoryLink
 string loading
 string location_permission_denied
 string lorem
+string mb_failure
+string mb_ok
+string mb_ready
 string menu_logout
 string navigation_drawer_close
 string navigation_drawer_open
@@ -1815,7 +1817,6 @@ styleable BottomNavigationView elevation itemBackground itemIconTint itemTextCol
 styleable BottomSheetBehavior_Layout behavior_hideable behavior_peekHeight behavior_skipCollapsed
 styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
-styleable CircularProgressButton cpb_colorIndicator cpb_colorIndicatorBackground cpb_colorProgress cpb_cornerRadius cpb_iconComplete cpb_iconError cpb_paddingProgress cpb_selectorComplete cpb_selectorError cpb_selectorIdle cpb_textComplete cpb_textError cpb_textIdle cpb_textProgress
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

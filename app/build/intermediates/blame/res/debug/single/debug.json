@@ -976,6 +976,10 @@
         "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b357a29032fd7c88ebffbc1dc75dcbf2\\res\\anim\\abc_popup_enter.xml"
     },
     {
+        "merged": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_lock.png.flat",
+        "source": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\src\\main\\res\\drawable\\ic_lock.png"
+    },
+    {
         "merged": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b357a29032fd7c88ebffbc1dc75dcbf2\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
@@ -1876,6 +1880,10 @@
         "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b357a29032fd7c88ebffbc1dc75dcbf2\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bt_corner.xml.flat",
+        "source": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\src\\main\\res\\drawable\\bt_corner.xml"
+    },
+    {
         "merged": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b357a29032fd7c88ebffbc1dc75dcbf2\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
@@ -2118,6 +2126,10 @@
     {
         "merged": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\saint\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b357a29032fd7c88ebffbc1dc75dcbf2\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_done.png.flat",
+        "source": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\src\\main\\res\\drawable\\ic_done.png"
     },
     {
         "merged": "C:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",

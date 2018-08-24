@@ -146,7 +146,7 @@ public class ConsumerService extends SAAgent {
         @Override
         public void onReceive(int channelId, byte[] data) {
             final String message = new String(data);
-            addMessage("Received: ", message);
+     //       addMessage("Received: ", message);
         }
 
         @Override
@@ -179,7 +179,7 @@ public class ConsumerService extends SAAgent {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            addMessage("Sent: ", data);
+           // addMessage("Sent: ", data);
         }
         return retvalue;
     }
@@ -225,13 +225,4 @@ public class ConsumerService extends SAAgent {
         });
     }
 */
-    private void addMessage(final String prefix, final String data) {
-        final String strToUI = prefix.concat(data);
-        mHandler.post(new Runnable() {
-            @Override
-            public void run() {
-                ConsumerActivity.addMessage(strToUI);
-            }
-        });
-    }
 }

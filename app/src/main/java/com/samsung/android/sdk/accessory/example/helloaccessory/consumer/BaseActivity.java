@@ -1,6 +1,9 @@
 package com.samsung.android.sdk.accessory.example.helloaccessory.consumer;
 
 import android.app.ProgressDialog;
+import android.support.annotation.ColorRes;
+import android.support.annotation.DimenRes;
+import android.support.annotation.IntegerRes;
 import android.support.v7.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,6 +30,17 @@ public class BaseActivity extends AppCompatActivity {
     public void onStop(){
         super.onStop();
         hideProgressDialog();
+    }
+    public int dimen(@DimenRes int resId) {
+        return (int) getResources().getDimension(resId);
+    }
+
+    public int color(@ColorRes int resId) {
+        return getResources().getColor(resId);
+    }
+
+    public int integer(@IntegerRes int resId) {
+        return getResources().getInteger(resId);
     }
 
     public String getUid(){
