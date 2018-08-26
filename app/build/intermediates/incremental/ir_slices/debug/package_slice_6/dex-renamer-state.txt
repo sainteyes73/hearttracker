@@ -1,4 +1,4 @@
-#Fri Aug 24 20:32:04 KST 2018
-base.0=C\:\\Users\\saint\\Desktop\\hearttracker\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+#Sat Aug 25 13:32:07 KST 2018
+base.0=/Users/gim-useong/Desktop/hearttracker/app/build/intermediates/transforms/dexMerger/debug/6
 path.0=classes.dex
 renamed.0=classes.dex

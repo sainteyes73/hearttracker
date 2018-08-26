@@ -215,6 +215,9 @@ public class ConsumerService extends SAAgent {
         }
         return true;
     }
+    public void showtextview(String value){//텍스트뷰에 onreceive에서 가져온값을 넣
+        checkrate.setText(value);
+    }
 /*
     private void updateTextView(final String str) {
         mHandler.post(new Runnable() {

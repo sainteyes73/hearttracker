@@ -131,15 +131,15 @@ public class ConsumerActivity extends BaseActivity {
                 }
                 break;
                 */
-                startActivity(new Intent(ConsumerActivity.this, HeartCheck.class));
+                if(mIsBound == true && mConsumerService != null){
+                    startActivity(new Intent(ConsumerActivity.this, HeartCheck.class));
+                }else{
+                    Toast.makeText(getApplicationContext(),"기기 연결을 해야합니다" , Toast.LENGTH_LONG).show();
+                }
+
             }
             case R.id.register: {
-                if (mIsBound == true && mConsumerService != null) {
-                    if (mConsumerService.sendData("Hello Accessory!")) {
-                    } else {
-                        Toast.makeText(getApplicationContext(),"AlreadyDisconnected" , Toast.LENGTH_LONG).show();
-                    }
-                }
+
                 break;
             }
             default:
