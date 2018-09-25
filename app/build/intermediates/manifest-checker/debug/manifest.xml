@@ -17,6 +17,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -39,10 +41,10 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.ConsumerActivity"
+            android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.main.ConsumerActivity"
             android:theme="@style/AppTheme" />
 
-        <service android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.ConsumerService" />
+        <service android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.main.ConsumerService" />
 
         <receiver android:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver" >
             <intent-filter>
@@ -63,7 +65,7 @@
             android:value="tpk" />
 
         <activity
-            android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.SplashActivity"
+            android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Login.SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -73,8 +75,11 @@
             </intent-filter>
             >
         </activity>
-        <activity android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.LoginActivity" />
-        <activity android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.HeartCheck" />
+        <activity android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Login.LoginActivity" />
+        <activity
+            android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.register.RegisterActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.register.RegisterListActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

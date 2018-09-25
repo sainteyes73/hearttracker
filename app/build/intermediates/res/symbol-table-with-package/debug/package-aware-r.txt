@@ -1052,7 +1052,6 @@ id center_horizontal
 id center_vertical
 id chains
 id checkbox
-id checkheart
 id chronometer
 id clip_horizontal
 id clip_vertical
@@ -1083,6 +1082,8 @@ id dragUp
 id easeIn
 id easeInOut
 id easeOut
+id editText_enter_password
+id editText_enter_rpassword
 id edit_query
 id end
 id end_padder
@@ -1091,8 +1092,11 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab_new_post
 id field_email
+id field_name
 id field_password
+id field_phone
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1102,6 +1106,7 @@ id forever
 id ghost_view
 id gone
 id groups
+id heartrate
 id home
 id homeAsUp
 id icon
@@ -1146,6 +1151,7 @@ id parent_matrix
 id path
 id pathRelative
 id percent
+id phone_number
 id pin
 id position
 id progress_circular
@@ -1153,6 +1159,8 @@ id progress_horizontal
 id radio
 id rectangles
 id register
+id register_title
+id register_toolbar
 id reverseSawtooth
 id right
 id right_icon
@@ -1203,14 +1211,18 @@ id startVertical
 id status_bar_latest_event_content
 id submenuarrow
 id submit_area
+id submitbutton
 id tabMode
 id tag_transition_group
 id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
+id textView_enter_name
+id textView_enter_rpassword
 id text_input_password_toggle
+id text_name
+id text_no_data
 id textinput_counter
 id textinput_error
 id time
@@ -1235,6 +1247,7 @@ id tvData
 id uniform
 id up
 id useLogo
+id user_list
 id view_offset_helper
 id visible
 id wide
@@ -1281,9 +1294,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_heart_check
 layout activity_login
 layout activity_main
+layout activity_register
+layout activity_register_list
 layout activity_splash
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1319,6 +1333,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout view_item
 mipmap ic_launcher
 string Complete
 string CustomSelectorSample
@@ -1712,6 +1727,7 @@ style ThemeOverlay_AppCompat_Dark_ActionBar
 style ThemeOverlay_AppCompat_Dialog
 style ThemeOverlay_AppCompat_Dialog_Alert
 style ThemeOverlay_AppCompat_Light
+style ToolbarTheme
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
